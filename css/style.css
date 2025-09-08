@@ -1,0 +1,1631 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Oswald";
+}
+
+
+
+html,body{
+    height: 100%;
+}
+
+
+
+.clear{
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* INICIO HEADER */
+
+
+header{
+    padding: 20px 2% 35px 2%;
+    height: 130px;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+header .logo{
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INICIO NAV.DESKTOP */
+
+
+header nav.desktop{
+    float: right;
+    position: relative; /* PARA FICAR MAIS CENTRALIZADO COM A LOGO */
+    top: 40px;
+}
+
+
+header nav.desktop ul{
+    list-style-type: none;
+}
+
+
+header nav.desktop ul li{
+    float: left; /* PARA LI FICAR UM DO LADO DO OUTRO */
+    font-size: 23px;
+    font-style: italic; /* APENAS NA LI */
+    padding: 0 30px;
+}
+
+
+header nav.desktop ul li a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* FINAL NAV.DESKTOP */
+
+/* FINAL HEADER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INICIO NAV.MOBILE */
+
+
+nav.mobile{
+    display: none; /* PARA OCULTAR NA TELA */
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    cursor: pointer;
+    background-image: url(../Imagens/icon_menu.png);
+    margin-top: 40px;
+    margin-right: 8px;
+}
+
+
+nav.mobile ul{
+    width: 100%;
+    position: absolute; /* PARA FICAR POR CIMA DE TUDO */
+    left: 0; /* PARA FICAR NO CANTO ESQUERDO SUPERIOR */
+    top: 112px; /* PARA FICAR NO CANTO ESQUERDO SUPERIOR */
+    background-color: white;
+    text-align: center;
+    list-style-type: none;
+    z-index: 999; /* POR CIMA DE TUDO */
+    display: none; /* ATIVAR COM JS DEPOIS */
+}
+
+
+nav.mobile ul li{
+    font-size: 23px;
+    padding: 20px 0;
+    font-style: italic;
+    border-bottom: 4px solid #ccc; /* BORDA EM BAIXO DA UL */
+}
+
+
+
+nav.mobile ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* FINAL NAV.MOBILE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INICIO SECTION.BANNER */
+
+
+section.banner{
+    width: 100%;
+    height: 650px; 
+    background-color: black;
+    background-image: url(../Imagens/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom; /* PARA FICAR POSICIONADO A DIREITO E PARTE INFERIOR */
+    overflow: hidden;
+}
+
+
+
+section.banner .text-banner{
+    padding: 100px;
+}
+
+
+
+section.banner .text-banner-single{
+    width: 314px;
+    height: 55px;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-image: url(../Imagens/box-text.png);
+    background-size: 100% 100%;
+    color: white;
+    font-size: 23px;
+    text-transform: uppercase; /* TEXTO MAIUSCULO */
+    font-style: italic;
+}
+
+
+
+section.banner .text-banner-single:nth-of-type(2){  /* PSEUDO CLASSES PARA MANIPULAR APENAS O SEGUNDO */
+    width: 200px;
+    height: 55px;
+    position: relative;
+    left: -14px;
+}
+
+
+
+section.banner .text-banner-single:nth-of-type(3){  /* PSEUDO CLASSES PARA MANIPULAR APENAS O SEGUNDO */
+    width: 170px;
+    height: 55px;
+    position: relative;
+    left: -26px;
+}
+
+
+
+section.banner .text-banner-single:nth-of-type(4){  /* PSEUDO CLASSES PARA MANIPULAR APENAS O SEGUNDO */
+    width: 425px;
+    height: 60px;
+    font-size: 21px;
+    padding: 14px 30px;
+    position: relative;
+    left: -41px;
+    background-image: url(../Imagens/box-white-text.png);
+    color: black;
+}
+
+
+/* FINAL SECTION.BANNER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INICIO SECTION.VEICULOS-DESTAQUES */
+
+
+section.veiculos-destaques{
+    padding: 90px 2%;
+}
+
+
+
+
+.line-title{
+    position: relative;
+    text-align: center;
+    max-width: 1280px; /* MSM LARGURA MAXIMA DO CONTAINER */
+    margin: 0 auto;
+}
+
+
+
+.line-title-2{
+    position: absolute;
+    top: 20px;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+
+
+
+section.veiculos-destaques .line-title h2{
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px; /* PARA AS LINHAS FICAREM MAIS SEPARADAS */
+    font-size: 27px;
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+
+
+section.veiculos-destaques .container{
+    max-width: 1000px; /* MSM LARGURA MAXIMA DO lINE-TITLE */
+    padding: 40px 0 10px 0;
+}
+
+
+
+
+.vitrine-destaques{
+    float: left;
+    width: 33.3%; /* POR QUE É 100% / 3 */
+}
+
+
+.vitrine-destaques .car-information{
+    position: relative;
+    top: -40px;
+    text-align: left;
+}
+
+
+
+
+
+
+.vitrine-destaques .car-img{
+    width: 100%;
+    padding-top: 100%; /* SO POSSO USAR PADDING-TOP QUANDO FOR BACKGROUND-IMG */
+    border: 8px solid white; /* PARA DAR O ESPAÇAMENTO ENTRE AS IMGS N POSSO USAR PADDING PQ ESTOU USANDO PADING-TOP */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.vitrine-destaques h2{
+    padding-left: 8px; /* PARA ALINHAR COM A BORDA DE 8PX */
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+
+
+
+.vitrine-destaques p{
+    padding-left: 8px; /* PARA ALINHAR COM A BORDA DE 8PX */
+    padding-top: 8px;
+    color: #353535;
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+
+
+.btn-1{
+    width: 150px;
+    text-align: center;
+    display: block;
+    line-height: 40px;
+    background-color: #eb2d2d;
+    text-decoration: none;
+    border-bottom: 5px solid #b21e1e;
+    color: white;
+}
+
+
+
+
+
+
+.vitrine-destaques a{
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+
+/* FINAL SECTION.VEICULOS-DESTAQUES */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INICIO SECTION-SERVICES-DESCRIPTION */
+
+
+section.services-description{
+    display: flex;  /* USEI DISPLAY FLEX PARA A ALTURA DE CADA METADE SER IGUAL DIFENTE DO FLOAT QUE PRECISO DEFINIR A ALTURA */
+}
+
+
+
+
+
+.metade-1{
+    width: 50%;  /* METADE */
+    padding: 90px 5%;
+    background-color: #242424;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+.metade-1-wraper{
+    display: inline-block;
+    padding-right: 100px;  /* PARA N FICAR GRUDADO NA OUTRA METADE */
+    text-align: left; /* PARA UL FICA ALINHADA */
+    /* SE COLOCAR FLOAT RIGHT VAI FICAR MAIS A DIREITA AINDA */
+    
+}
+
+
+
+
+
+.metade-1-wraper h2{
+    font-weight:normal ;
+    font-style: italic;
+    font-size: 32px;
+}
+
+
+
+
+.metade-1-wraper ul{
+    display: inline-block; /* PARA O BOTAO FICAR D LADO DA UL ALINHADO */
+    margin-top: 20px;
+}
+
+
+
+
+
+.metade-1-wraper li{
+    margin-left: 15px;
+}
+
+
+
+
+
+.metade-1-wraper a{
+    margin-top: 20px;
+    display: inline-block; /* PARA O BOTAO FICAR D LADO DA UL ALINHADO */
+    vertical-align: bottom; /* PARA ALINHAR O BOTAO EM BAIXO */
+    margin-left: 40px;
+}
+
+
+
+
+
+.metade-2{
+    width: 50%;  /* METADE */
+    padding: 90px 2%;
+    background-color: #eb2d2d;
+    color: white;
+    
+}
+
+
+.equip-depoimento{
+    overflow: hidden;
+}
+
+
+
+.equip-depoimento-wraper{
+    width: auto; 
+}
+
+
+
+
+
+.metade-2 h2{
+    font-weight:normal ;
+    font-style: italic;
+    font-size: 32px;
+    padding-left: 40px;
+}
+
+
+
+
+.metade-2 .depoimento-single{
+    margin-top: 19px;
+    float: left; 
+    padding: 0 40px;
+}
+
+
+
+
+.depoimento-single p{
+    font-size: 22px;
+}
+
+
+
+
+.navegation{
+    width: 100%; /* PARA O NAME DEPOIMENTO FICAR NO FINAL DESSA DIV A DIREITA */
+    max-width: 700px;
+    float: left; /* FICAR A ESQUERDA E NA MS LINHA DOS BOTOES */
+    margin-top: 30px;
+}
+
+
+
+
+
+
+.navegation .name-depoimento{
+    float: right; /* FICAR A DIREITA E NA MS LINHA DOS BOTOES */
+    color: #252525;
+    font-size: 23px;
+}
+
+
+
+
+.metade-2 .arrow{
+    float: left; /* FICAR A ESQUERDA E NA MS LINHA DOS BOTOES */
+}
+
+
+
+
+
+.metade-2 .arrow img{
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+
+/* FINAL SECTION-SERVICES-DESCRIPTION */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INICIO SECTION-CONTACT */
+
+
+section.contact .line-title h2{
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px; /* PARA AS LINHAS FICAREM MAIS SEPARADAS */
+    font-size: 27px;
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+
+
+
+
+section.contact{
+    padding: 80px 2% 0 2%;
+}
+
+
+
+section.contact form{
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+
+
+section.contact .input-wraper{
+    float: left;
+    padding: 10px;
+    margin-top: 8px;
+}
+
+
+section.contact input[type=text], section.contact input[type=email], section.contact input[type=tel]{
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    line-height: 40px; /* MSM VALOR DO HEIGHT */
+    padding-left: 15px;
+}
+
+.alerta{
+    color: red;
+    position: relative;
+    left: -35px;
+}
+
+.w100{
+    width: 100%;
+}
+
+
+.w50{
+    width: 50%;
+}
+
+
+section.contact textarea{
+    width: 100%;
+    height: 140px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    resize: none;   /* PARA O USUARIO NAO REDIMENSIONAR */
+}
+
+
+
+
+section.contact input[type=submit]{
+   border-right:0;  /* JA FIZ O ESTILO PATA BTN-1 */
+   border-left: 0;
+   border-top: 0;
+   cursor: pointer;
+   display: inline-block; /* PARA CENTRALIZAR O BOTAO */
+   
+}
+
+
+
+section.contact form input[type=submit]:nth-last-of-type(5){
+    text-align: center;  /* PARA CENTRALIZAR O BOTAO */
+}
+
+
+/* FINAL SECTION-CONTACT */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INICIO FOOTER */
+
+
+footer{
+    padding: 40px 2%;
+    background-color: #252525;
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+footer nav{
+    float: left;
+}
+
+
+
+footer nav ul{
+     list-style-type: none;
+}
+
+
+footer nav ul li{
+     float: left;
+     font-size: 19px;
+     font-style: italic;
+     color: white;
+}
+
+
+footer nav li a{
+    text-decoration: none;
+    padding: 0 30px;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+
+footer p{
+    float: right;
+    color: white;
+    font-size: 19px;
+    font-style: italic;
+    position: relative;
+    top: -30px;
+   
+}
+
+
+/* FINAL FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INICIO SECTION-SALES */
+
+
+section.sales{
+    min-height: 90%;
+    padding: 90px 0;
+}
+
+
+
+
+
+section.sales .line-title h2{
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px; /* PARA AS LINHAS FICAREM MAIS SEPARADAS */
+    font-size: 27px;
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INICIO SIDE-BAR */
+
+
+section.sales .content-venda{
+    margin-top: 40px;
+}
+
+
+
+
+section.sales .side-bar{
+    float: left;
+    width: 30%;
+    padding: 0 15px;
+}
+
+
+
+.search-1{
+    width: 90%;
+}
+
+
+
+
+
+.search-1 h2{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+
+
+
+
+
+.search-1 .barra-preco{
+    width: 100%;  /* 100% COOM BASE NOS  300PX DO .SEARCH-1 */
+    height: 20px;
+    margin-top: 8px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    position: relative;  /* PARA COLOCAR O .BARRA-PREÇO-FILL COMO ABSOLUT */
+}
+
+
+
+
+.content-venda .barra-preco-fill{
+    position: absolute; /* ABSOLUT SOBRE O ELEMENTO RELATIVO NO CASO .BARRA PREÇO */
+    left: 0;
+    top: 0;
+    width: 0;  /* 30% COM BASE NO ELEMENTO TODO NO CASO O .BARRA PREÇO Q E 300PX */
+    height: 18px;
+    background: linear-gradient(to bottom, rgb(255,255,255),rgb(200,200,200));
+    border-radius: 20px;
+}
+
+
+.content-venda .pointer-barra{
+    width: 26px;
+    height: 25px;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, rgb(255,255,255),rgb(120,120,120));
+    border: 1px solid #777;
+    position: absolute; /* E ABSOLUT SOBRE O ELEMNTO RELATIVO NO CASO O .BARRA-PREÇO */
+    left: 0px;  /* 13PX PQ É METADE DO VALOR TOTA NO CASO WIDTH DE 26PX */
+    top: -4px; /* PARA O ELEMENTO SUBIR UM POUCO O CASO 2PX */
+    cursor: pointer;
+}
+
+
+
+
+.content-venda .valor-pesquisa{
+    display: block;  /* DISLPAY BLOCK JA E PADRAO COLOQUEI PARA N ESQUECER */
+    margin-top: 8px;
+}
+
+
+
+.content-venda .valor-pesquisa p:nth-last-of-type(1){ /* PRIMEIRO P DENTRO DO .VALOR-PESQUISA */
+    float: left; /* PARA FICAR UM DO LADO DO OUTRO */
+}   
+
+
+
+.content-venda .valor-pesquisa p:nth-last-of-type(2){
+    float: right; /* PARA FICAR UM DO LADO DO OUTRO */
+}
+
+
+
+.content-venda .valor-pesquisa p{
+    color: black;
+    font-size: 15px;
+}
+
+
+
+
+.search-2{
+    margin-top: 40px;
+}
+
+
+
+.search-2 h2{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+
+
+.form-venda-wraper{
+    margin-top: 15px;
+}
+
+
+
+
+.form-venda-wraper input[type=checkbox]{
+    display: none;   /* REMOVENDO O CHECKBOX */
+}
+
+
+
+
+.form-venda-wraper label{
+    width: 20px;            /* CRIANDO A CAIXA DE SELEÇAO NO LUGAR DO CHECKBOX */
+    height: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;  
+    border-radius: 3px;
+    vertical-align: top;
+    cursor: pointer;
+    position: relative;  /* PARA DPS USAR A POSITION ABSOLUT NO .CIRCLE */
+}
+
+
+
+
+
+
+
+.form-venda-wraper input[type=checkbox]:checked + label > .circle{ /* CRIANDO A CHECKBOX PERSONALIZADA */
+    display: block; 
+} /* DENTRO DO .FORM-VENDA-WRAPER PEGUE O INPUT[CHECKBOX] E AO FICAR SELECIONADO (CHECKED) PEGUE A LABEL
+  O + E O ELEMENTO DPS NO CASO A LABEL E DENTRO DA LABEL PEGUE APENAS O > .CIRCLE  */
+
+
+
+
+
+
+
+
+.form-venda-wraper .circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;  /* METADE DA LARGURA */
+    background-color: black;
+    position: absolute;
+    left: 6px;   /* 6 PQ É METADE DA LARGURA DA LABEL NO CASO 10 MENOS A METADE DO CIRCLE NO CASO 4 10-4= 6 VAI FICAR CENTRALIZADO NO MEIO */
+    top: 6px;
+    display: none;
+}
+
+
+
+
+
+.form-venda-wraper span{
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* FINAL SIDE-BAR */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INICIO VITRINE-VENDAS */
+
+
+.vitrine-vendas{
+    width:70% ;  /* 70% PQ USEI 30% NA SIDE-BAR */
+    float: left; /* COMEÇAR DA ESQUERDA */
+    overflow: auto;
+}
+
+
+
+
+
+
+.vitrine-vendas .vitrine-destaques{  /* COMECEI CHAMANDO .VITRINE-VENDAS PQ NAO QUERO QUE A MARGIN DO VITRINE-DESTAQUES SEJA APLICADA NA PAGINA INICIAL */
+    margin-top: 5px;
+}
+
+
+/* FINAL VITRINE-VENDAS */
+
+
+/* FINAL SECTION-SALES */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INICIO SECTION.VENDAS-SINGLE */
+
+
+
+section.venda-single{
+    padding:80px 2% 0 2%;
+}
+
+
+
+section.venda-single .title-venda-single{
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px; /* PARA AS LINHAS FICAREM MAIS SEPARADAS */
+    font-size: 27px;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+section.venda-single .container{
+    padding: 70px 0 0 0; /* REMOVENDO ESPAÇAMENTO DE BAIXO */
+    max-width: 1280px;
+    text-align: center;
+}
+
+
+
+.info-veiculo{
+    display: inline-block;
+    width: 60%;
+}
+
+
+
+
+.foto-destaque{
+    width: 100%;
+    padding-top: 80%;
+    background-position: center;
+    background-size: cover; /* COBRIR TD AREA */
+    background-repeat: no-repeat;
+}
+
+
+
+
+.descricao-veiculo{
+    width: auto;
+    display: inline-block;
+    padding: 60px 20px;  /* DESCENDO PARA ALINHAR COM A IMG */
+    vertical-align: top;
+    text-align: left;
+}
+
+
+
+
+
+
+.descricao-veiculo p{
+    margin-top: 25px;
+    max-width: 250px;
+    font-size: 17px;
+}
+
+
+
+.descricao-veiculo a{
+    margin-top: 25px;
+}
+
+
+.nav-galeria-parent{
+    width: 100%;
+    padding: 36px;
+    position: relative;
+}
+
+
+
+.arrow-left-nav{
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    background-image: url(../Imagens/arrow-left.png);
+    background-size: 100% 100%;
+    transform: translateY(-50%);  /* TIRANDO DIFERENÇA DOS 50% PARA CENTRALIZAR */
+    -ms-transform: translateY(-50%);  /* FUNCIONAR NO INTERNET EXPLORER */
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+
+
+.arrow-right-nav{
+    position: absolute;
+    right: 8px; /* TROCANDO LADO DA SETA */
+    top: 50%;
+    background-image: url(../Imagens/arrow-right.png);
+    background-size: 100% 100%;
+    transform: translateY(-50%);  /* TIRANDO DIFERENÇA DOS 50% PARA CENTRALIZAR */
+    -ms-transform: translateY(-50%);  /* FUNCIONAR NO INTERNET EXPLORER */
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+
+
+.info-bread{
+    text-align: left;
+    padding:20px 0 ;
+}
+
+
+
+.info-bread a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.info-bread span{
+    padding: 0 30px;
+}
+
+
+
+.info-bread a:last-child{
+    color: red;   /* PARA O ULTIMO LINK FICAR NA COR RED */
+}
+
+
+
+.nav-galeria{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/*.nav-galeria-wraper{
+    VAI SER VIA JS 
+}
+*/
+
+
+
+.mini-img-wraper{
+    float: left; /* PARA AS IMAGENS FICAREM UMA DO LADO DA OUTRA */
+    padding: 9px;
+   /* width: calc(33.3% * (100 / 200));  VAI SER VIA JS*/
+}
+
+
+
+
+
+.mini-img{
+    width: 100%;
+    padding-top:70%;  
+    background-position: center;
+    background-size: cover;
+    border: 7px solid white;
+    cursor: pointer;
+}
+
+
+/* FINAL SECTION.VENDAS-SINGLE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INICIO SECTION.SOBRE */
+
+
+section.sobre{
+    padding:80px 2% 20px 2%;
+    min-height: 90%;
+}
+
+
+
+section.sobre .title-venda-single{
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px; /* PARA AS LINHAS FICAREM MAIS SEPARADAS */
+    font-size: 27px;
+    font-style: italic;
+}
+
+
+
+section.sobre .container{
+    margin-top: 30px;
+    max-width: 840px;
+}
+
+
+section.sobre .img-destaque-sobre{
+    width: 100%;
+    padding-top: 60%; /* PARA RESPEITAR O ASPECTO RETREL */
+    background-image: url(../Imagens/cars-sobre2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+section.sobre .description-author{
+    margin-top: 20px;
+}
+
+
+.description-author h2{
+    font-size: 24px;
+}
+
+.description-author  p{
+    font-size: 18px;
+    margin-top: 16px;
+    line-height: 28px;
+}
+
+
+
+
+.description-author-2{
+    margin-top: 20px;
+}
+
+
+
+.img-author-2{
+    width: 30%;
+    padding-top: 30%;
+    float: left;
+    background-image: url(../Imagens/cars-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.description-author-3{
+    float: left;
+    width: 70%;
+    padding:15px;
+    line-height: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVO */
+
+
+
+@media screen and (max-width: 1040px) {
+    .metade-1-wraper {
+        padding-left: 20px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 875px) {
+    .info-veiculo{
+        width: 100%; /* VAI SER A LARGURA TOTAL DA TELA */
+        background-color: red;
+    }
+
+    
+    .descricao-veiculo{
+        text-align: center;
+        padding: 20px 0;
+    }
+
+
+    .descricao-veiculo p{
+        max-width: none;  /* REMOVENDO A LARGURA MAXIMA */
+    }
+    
+
+    .descricao-veiculo a{
+        display: inline-block; /* CENTRALIZANDO BOTAO COM DISPLAY INLINE BLOCK */
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 830px) {
+
+    .metade-1-wraper a{
+        display: block; /* PARA O BOTAO CAIR PARA BAIXO */
+        margin-left: 0; /* REMOVENDO A MARGIN-LEFT */
+        margin-top: 15px;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 760px){
+
+    section.banner{
+		background-size: cover;
+		background-position: 100px center;
+		height: 80vh;
+	}
+
+
+    nav.desktop{
+        display: none;
+    }
+
+
+    nav.mobile{
+        display: block;
+    }
+
+    section.services-description{
+        flex-direction: column;  /* PARA TD QUE ESTIVER DENTRO FICAR EM COLUNA */
+    }
+
+
+    .metade-1, .metade-2{
+        width: 100%;  /* PARA PEGAR 100% DA TELA */
+        padding: 90px 2%; /* MSM PADDING DA METADE 2 */
+    }
+
+
+    .metade-1{
+        text-align: center;
+    }
+
+
+
+    .w50{
+        width: 100%;
+    }
+
+
+    footer{
+
+        text-align: center;
+    }
+
+
+
+    footer nav{
+        display: none;
+    }
+
+
+    footer p {
+        float: none;
+        position: static;
+    }
+
+
+    .vitrine-vendas{
+        width: 100%; /* PARA NAO FICAR DO LADO DA SIDE-BAR E SIM EM BAIXO */
+        float: left;/* PARA NAO FICAR DO LADO DA SIDE-BAR E SIM EM BAIXO */
+        text-align: center; /* ALINHAR TD NO CENTRO */
+    }
+
+
+
+    section.veiculos-destaques .container{
+        max-width: 1000px; /* MSM LARGURA MAXIMA DO lINE-TITLE */
+        padding: 40px 0;
+        text-align: center; /* PARA FICAR TD NO CENTRO  */
+    }
+
+
+
+    
+
+
+    .vitrine-destaques{
+        display: inline-block;
+        float:none;
+        width: 80%; 
+        margin-top: 30px;
+    }
+
+
+    .car-information{
+        display: inline-block;
+        text-align: center;
+    }
+
+
+
+    .vitrine-destaques a{
+        display: inline-block; /* PARA CENTRALIZAR NO MEIO */
+    }
+
+
+
+    section.sales .side-bar{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+
+    section.sales .search-1{
+        display: inline-blocK; /* PARA CENTRALIZAR A BARRA DE PREÇOS */
+    }
+
+
+
+    section.sales .search-2{
+        display: inline-block;
+        text-align: left; /* ALINHAR CHECKBOX PERSONALIZADO A ESQUERDA */
+    }
+
+
+    .img-author-2{
+        width: 100%;
+        padding-top: 50%;
+        background-size: contain;
+        float: none;
+    }
+
+
+
+
+    .description-author-3{
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    
+}
+
+
+
+
+@media screen and (max-width: 580px) {
+    section.banner .text-banner{
+        padding: 30px 50px; /* DIMINUINDO O ESPAÇAMENTO */
+    }
+    
+    
+    
+    section.banner .text-banner-single{
+        width: 240px;
+       font-size: 18px; /* DIMINUINDO FONTE */
+    }
+
+
+    .text-banner .text-banner-single:nth-of-type(4){
+        width: 270px;
+    }
+
+
+
+
+    section.veiculos-destaques .line-title h2{
+        font-size: 23px;
+    }
+
+
+
+
+
+    
+
+}
+
+
+
+
+@media screen and (max-width: 479px) {
+    .vitrine-destaques{
+        width: 100%;
+    }
+    
+}
